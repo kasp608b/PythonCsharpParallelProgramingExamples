@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>50898eb2-8381-44be-b167-b7fc550187ac</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonMultiprocessing.py</StartupFile>
+    <StartupFile>file_one.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PythonMultiprocessing.py" />
+    <Compile Include="file_one.py" />
+    <Compile Include="file_two.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
