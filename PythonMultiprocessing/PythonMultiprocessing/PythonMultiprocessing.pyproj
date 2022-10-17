@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>50898eb2-8381-44be-b167-b7fc550187ac</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>file_one.py</StartupFile>
+    <StartupFile>realPythonConcurrency\IO-Bound\IO_Bound_Threading.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,8 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="file_one.py" />
-    <Compile Include="file_two.py" />
+    <Compile Include="mainModuleLearning\file_one.py" />
+    <Compile Include="mainModuleLearning\file_two.py" />
+    <Compile Include="realPythonConcurrency\IO-Bound\IO_Bound_Threading.py" />
+    <Compile Include="realPythonConcurrency\IO-Bound\IO_Bound_Synchronous.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mainModuleLearning\" />
+    <Folder Include="realPythonConcurrency\" />
+    <Folder Include="realPythonConcurrency\IO-Bound\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
