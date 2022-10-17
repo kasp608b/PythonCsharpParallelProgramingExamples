@@ -1,16 +1,19 @@
 # SuperFastPython.com
 # example of a parallel for loop with the Thread class
 from threading import Thread
+import time 
+
 
 # execute a task
 def task(value):
-    # add your work here...
-    # ...
-    # all done
+    time.sleep(10)
     print(f'.done {value}')
 
 # protect the entry point
 if __name__ == '__main__':
+    
+    start_time = time.time()
+   
     # create all tasks
     threads = [Thread(target=task, args=(i,)) for i in range(20)]
     # start all threads
@@ -20,4 +23,5 @@ if __name__ == '__main__':
     for thread in threads:
         thread.join()
     # report that all tasks are completed
-    print('Done')
+    duration = time.time() - start_time
+    print(f"Done in {duration} seconds")

@@ -4,9 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>50898eb2-8381-44be-b167-b7fc550187ac</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>realPythonConcurrency\IO-Bound\IO_Bound_Threading.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>PythonLoops\loop1.py</StartupFile>
+    <SearchPath>my_primes;primes</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PythonMultiprocessing</Name>
@@ -23,11 +22,23 @@
   <ItemGroup>
     <Compile Include="mainModuleLearning\file_one.py" />
     <Compile Include="mainModuleLearning\file_two.py" />
+    <Compile Include="my_primes\my_prime_generator.py" />
+    <Compile Include="my_primes\__init__.py" />
+    <Compile Include="PythonLoops\loop1.py" />
+    <Compile Include="PythonLoops\loop2.py" />
+    <Compile Include="PythonLoops\loop3.py" />
+    <Compile Include="PythonLoops\loop4.py" />
+    <Compile Include="PythonLoops\loop5.py" />
+    <Compile Include="PythonLoops\loop6.py" />
     <Compile Include="realPythonConcurrency\IO-Bound\IO_Bound_Threading.py" />
     <Compile Include="realPythonConcurrency\IO-Bound\IO_Bound_Synchronous.py" />
+    <Compile Include="primes\prime_gen.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mainModuleLearning\" />
+    <Folder Include="my_primes\" />
+    <Folder Include="primes\" />
+    <Folder Include="PythonLoops\" />
     <Folder Include="realPythonConcurrency\" />
     <Folder Include="realPythonConcurrency\IO-Bound\" />
   </ItemGroup>
