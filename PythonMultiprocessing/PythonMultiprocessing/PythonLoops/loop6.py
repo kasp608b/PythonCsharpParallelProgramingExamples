@@ -1,11 +1,11 @@
 # SuperFastPython.com
 # example of a parallel for loop with the ProcessPoolExecutor class
 import concurrent.futures
-import time
 
 # execute a task
 def task(value):
-    time.sleep(1)
+    # add your work here...
+    # return a result, if needed
     return value
 
 # protect the entry point
@@ -16,7 +16,7 @@ if __name__ == '__main__':
         futures = [exe.submit(task, i) for i in range(50)]
         # process results as tasks are completed
         for future in concurrent.futures.as_completed(futures):
-            print(f'>got {future.result()}')
+            print(f'>got {future.result}')
         # issue one task for each call to the function
         for result in exe.map(task, range(50)):
             print(f'>got {result}')

@@ -2,14 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>50898eb2-8381-44be-b167-b7fc550187ac</ProjectGuid>
+    <ProjectGuid>a40696ae-8933-4e3c-add0-2c7a3d012524</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonLoops\loop5.py</StartupFile>
-    <SearchPath>primes</SearchPath>
+    <StartupFile>python_prime_process_pool.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PythonMultiprocessing</Name>
-    <RootNamespace>PythonMultiprocessing</RootNamespace>
+    <Name>FinishedPythonExamples</Name>
+    <RootNamespace>FinishedPythonExamples</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,24 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="mainModuleLearning\file_one.py" />
-    <Compile Include="mainModuleLearning\file_two.py" />
-    <Compile Include="PythonLoops\loop1.py" />
-    <Compile Include="PythonLoops\loop2.py" />
-    <Compile Include="PythonLoops\loop3.py" />
-    <Compile Include="PythonLoops\loop4.py" />
-    <Compile Include="PythonLoops\loop5.py" />
-    <Compile Include="PythonLoops\loop6.py" />
-    <Compile Include="realPythonConcurrency\IO-Bound\IO_Bound_Threading.py" />
-    <Compile Include="realPythonConcurrency\IO-Bound\IO_Bound_Synchronous.py" />
-    <Compile Include="primes\prime_gen.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="mainModuleLearning\" />
-    <Folder Include="primes\" />
-    <Folder Include="PythonLoops\" />
-    <Folder Include="realPythonConcurrency\" />
-    <Folder Include="realPythonConcurrency\IO-Bound\" />
+    <Compile Include="python_prime_process_pool.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
