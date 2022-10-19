@@ -1,9 +1,8 @@
-# SuperFastPython.com
-# example of a parallel for loop with the Pool class
+
+# Example of multiprocessing with Pool
 from multiprocessing import Pool
 import time
 
-# execute a task
 def task(value):
     if is_prime(value):
         return value
@@ -36,11 +35,9 @@ def is_prime(number):
          i += 2
     return True
 
-# protect the entry point
 if __name__ == '__main__':
     
     
-    # create all tasks
     start_time = time.time()
     
     #primes = get_primes_synch()

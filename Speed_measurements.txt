@@ -5,7 +5,22 @@ csharp
 0,125 para 
 
 python 
-3.0597519874572754 seconds seq
-Done in 0.644967794418335 seconds para
+3.059 seconds seq
+Done in 0.644 seconds para
+
+##############################################
+
+partitioner/ chunking
+#############################################
+csharp
+2,141 seq 
+0,260 para 
+0,253 partitioned
+0,226 partitioned with specified size
+
+python 
+13.271 SequentialLoop
+18.388 ParallelLoop
+8.983 ParallelLoopWithChunkSize
 
 ##############################################
