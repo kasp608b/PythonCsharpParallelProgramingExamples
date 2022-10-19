@@ -6,7 +6,8 @@ csharp
 
 python 
 3.059 seconds seq
-Done in 0.644 seconds para
+0.685 getPrimesProcess
+0.664 getPrimesProcessAsync
 
 ##############################################
 
