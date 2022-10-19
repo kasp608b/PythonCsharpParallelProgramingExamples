@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a40696ae-8933-4e3c-add0-2c7a3d012524</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>python_async_await.py</StartupFile>
+    <StartupFile>python_partitioner.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="python_async_await.py" />
+    <Compile Include="python_partitioner.py" />
     <Compile Include="python_prime_process_pool.py" />
   </ItemGroup>
   <ItemGroup>
