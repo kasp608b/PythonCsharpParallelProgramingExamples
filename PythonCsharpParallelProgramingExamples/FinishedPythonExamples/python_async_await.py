@@ -4,21 +4,19 @@ import colorama
 import random
 
 
-def main():
+async def  main():
    
-    loop = asyncio.new_event_loop()
-
     t0 = datetime.datetime.now()
     print(colorama.Fore.WHITE + "App started.", flush=True)
 
-    data = asyncio.Queue(loop=loop)
+    data = asyncio.Queue()
 
-    task1 = loop.create_task(generate_data(20, data))
-    task2 = loop.create_task(generate_data(20, data))
-    task3 = loop.create_task(process_data(40, data))
+    task1 = asyncio.create_task(generate_data(20, data))
+    task2 = asyncio.create_task(generate_data(20, data))
+    task3 = asyncio.create_task(process_data(40, data))
 
-    final_task = asyncio.gather(task1, task2, task3)
-    loop.run_until_complete(final_task)
+    await asyncio.gather(task1, task2, task3)
+    
 
     dt = datetime.datetime.now() - t0
     print(colorama.Fore.WHITE + f"App exiting, total time: {dt.total_seconds():,.2f} sec.", flush=True)
@@ -49,7 +47,7 @@ async def process_data(num: int, data: asyncio.Queue):
 
 
 if __name__ == '__main__':
-    main()
+    asyncio.run(main())
 
 
 
