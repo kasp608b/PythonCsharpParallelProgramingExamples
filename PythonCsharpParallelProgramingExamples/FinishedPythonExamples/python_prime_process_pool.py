@@ -21,6 +21,14 @@ def get_primes_process():
     
    with Pool() as pool:
        return [x for x in pool.map(task, range(1000000, 2000000)) if x != None]
+
+def get_primes_process_async():
+    
+   with Pool() as pool:
+       results_local = pool.map_async(task, range(1000000, 2000000))
+       sanitizedResults =  [x for x in results_local.get() if x != None]
+       sanitizedResults.sort()
+       return sanitizedResults
     
 def is_prime(number):
 
@@ -40,8 +48,23 @@ if __name__ == '__main__':
     
     start_time = time.time()
     
-    #primes = get_primes_synch()
+    primes = get_primes_synch()
+          
+    duration = time.time() - start_time
+    print(f"{duration} getPrimesSynch")
+    print(primes)
+
+    
+    start_time = time.time()
+    
     primes = get_primes_process()       
     duration = time.time() - start_time
-    print(f"Done in {duration} seconds")
-    print(primes)
+    print(f"{duration} getPrimesProcess")
+    #print(primes)
+
+    start_time = time.time()
+    
+    primes = get_primes_process_async()       
+    duration = time.time() - start_time
+    print(f"{duration} getPrimesProcessAsync")
+    #print(primes)
