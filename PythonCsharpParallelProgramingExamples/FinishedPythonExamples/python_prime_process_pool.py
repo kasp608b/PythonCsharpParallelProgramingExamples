@@ -1,4 +1,3 @@
-
 # Example of multiprocessing with Pool
 from multiprocessing import Pool
 import time
@@ -8,7 +7,7 @@ def task(value):
         return value
     else:
         return
-    
+           
 def get_primes_synch():
     primes = []
     for i in range(1000000, 2000000):
@@ -25,9 +24,9 @@ def get_primes_process():
 def get_primes_process_async():
     
    with Pool() as pool:
+
        results_local = pool.map_async(task, range(1000000, 2000000))
        sanitizedResults =  [x for x in results_local.get() if x != None]
-       sanitizedResults.sort()
        return sanitizedResults
     
 def is_prime(number):
@@ -52,7 +51,7 @@ if __name__ == '__main__':
           
     duration = time.time() - start_time
     print(f"{duration} getPrimesSynch")
-    print(primes)
+    #print(primes)
 
     
     start_time = time.time()
