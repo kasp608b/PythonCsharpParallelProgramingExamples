@@ -2,6 +2,7 @@
 #Example of Threads in Python
 import threading
 import time
+import colorama
 from threading import Thread
 import os
 
@@ -17,8 +18,8 @@ def task(id, sleep_time):
 
         while True:
             number = number * number
-            if (time.time() - start_time) < sleep_time:
-                print
+            if (time.time() - start_time) >= sleep_time:
+                print(colorama.Fore.RED + f"Task {id} is finished:")
                 break;
 
 if __name__ == '__main__':
@@ -26,7 +27,7 @@ if __name__ == '__main__':
     task2 = Thread(target=task, args=(2, 3))
     task3 = Thread(target=task, args=(3, 4))
     task4 = Thread(target=task, args=(4, 5))
-    # Total 100 seconds
+    # Total 150 seconds
 
     start_time = time.time()
 
