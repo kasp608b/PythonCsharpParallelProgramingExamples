@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="python_processes.py" />
     <Compile Include="python_threads.py" />
     <Compile Include="python_async_await.py" />
     <Compile Include="python_partitioner.py" />
