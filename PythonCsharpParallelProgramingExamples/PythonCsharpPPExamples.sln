@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asyncAwait", "asyncawait\as
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp_partitioner", "csharp_partitioner\csharp_partitioner.csproj", "{ADBC0078-DEA5-46BC-B43A-57D43779B0CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp_threads", "Csharp_threads\csharp_threads.csproj", "{898DD0EA-7ECE-4B23-ACFC-80CE4CE5CC58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp_threads", "Csharp_threads\csharp_threads.csproj", "{898DD0EA-7ECE-4B23-ACFC-80CE4CE5CC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp_tasks", "csharp_tasks\csharp_tasks.csproj", "{8927F955-3939-453B-8A4D-0EC5CA720A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{898DD0EA-7ECE-4B23-ACFC-80CE4CE5CC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{898DD0EA-7ECE-4B23-ACFC-80CE4CE5CC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{898DD0EA-7ECE-4B23-ACFC-80CE4CE5CC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8927F955-3939-453B-8A4D-0EC5CA720A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8927F955-3939-453B-8A4D-0EC5CA720A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8927F955-3939-453B-8A4D-0EC5CA720A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8927F955-3939-453B-8A4D-0EC5CA720A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

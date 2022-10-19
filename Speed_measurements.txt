@@ -25,3 +25,25 @@ python
 8.983 ParallelLoopWithChunkSize
 
 ##############################################
+
+Threads
+#############################################
+csharp
+50 seconds
+
+python 
+100 seconds standard
+200 seconds interactive window
+
+##############################################
+
+Task and Processes
+#############################################
+csharp
+50 seconds
+
+python 
+62 seconds standard
+61 seconds interactive window
+
+##############################################
