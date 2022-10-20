@@ -16,7 +16,7 @@ Task.WaitAll(task1, task2, task3);
 var dt = System.DateTime.Now - t0;
 
 Console.ForegroundColor = ConsoleColor.White;
-Console.WriteLine($"App exiting, total time: {dt.Seconds} sec." );
+Console.WriteLine($"App exiting, total time: {dt.TotalSeconds} sec." );
 
 
 async Task<string> GenerateData(int num, ConcurrentQueue<DataField> data)

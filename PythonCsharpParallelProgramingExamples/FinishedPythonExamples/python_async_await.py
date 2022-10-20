@@ -11,13 +11,10 @@ async def  main():
 
     data = asyncio.Queue()
 
-    task1 = asyncio.create_task(generate_data(20, data))
-    task2 = asyncio.create_task(generate_data(20, data))
-    task3 = asyncio.create_task(process_data(40, data))
-
-    await asyncio.gather(task1, task2, task3)
+    await asyncio.gather(generate_data(20, data),
+                         generate_data(20, data), 
+                         process_data(40, data))
     
-
     dt = datetime.datetime.now() - t0
     print(colorama.Fore.WHITE + f"App exiting, total time: {dt.total_seconds():,.2f} sec.", flush=True)
 
