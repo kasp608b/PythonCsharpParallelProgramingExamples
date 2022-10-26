@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a40696ae-8933-4e3c-add0-2c7a3d012524</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>python_prime_process_pool.py</StartupFile>
+    <StartupFile>python_async_await.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
