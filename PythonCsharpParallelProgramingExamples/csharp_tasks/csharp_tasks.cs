@@ -39,4 +39,3 @@ Task.WaitAll(task1, task2, task3, task4);
 
 long time = sw.ElapsedMilliseconds;
 Console.WriteLine(time / 1000 + " seconds");
-
